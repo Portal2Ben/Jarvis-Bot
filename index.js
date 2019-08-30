@@ -230,7 +230,7 @@ client.on("message", async message => {
   }
 
   if(command === "commands") {
-    message.channel.send("__The Current Commands are:__\n-ping = Pings the bot and calculates Delay\n-say (message) = The Bot deletes your message and sends What you want it to say\n-kick (@member) (reason) = Kicks the selected member from the server\n-ban (@member) (reason) = Bans the selected member from the server\n-purge (2-100) = Deletes Said amount of messages from the current channel\n-shutdown = Shuts down the bot remotely\n-dev = enables developer mode\n-idle = enables idle mode\n-online = restores online mode\n-update (message) = Sends a Update though the update channel\n-warning (message) = Sends a Warning to the announcement channel\n-error (message) = sends a error to the announcement channel\n-announce (message) = Sends a announcement to the anouncement channel")
+    message.channel.send("__The Current Commands are:__\n-connect = Gives you the connect link!\n-ping = Pings the bot and calculates Delay\n-say (message) = The Bot deletes your message and sends What you want it to say\n-kick (@member) (reason) = Kicks the selected member from the server\n-ban (@member) (reason) = Bans the selected member from the server\n-purge (2-100) = Deletes Said amount of messages from the current channel\n-shutdown = Shuts down the bot remotely\n-dev = enables developer mode\n-idle = enables idle mode\n-online = restores online mode\n-update (message) = Sends a Update though the update channel\n-warning (message) = Sends a Warning to the announcement channel\n-error (message) = sends a error to the announcement channel\n-announce (message) = Sends a announcement to the anouncement channel")
   }
 
   if(command === "status") {
@@ -240,6 +240,9 @@ client.on("message", async message => {
       client.user.setActivity(sayMessage)
       client.user.setStatus("online")
   }
+  
+  if(command === "connect") {
+    return message.reply("Connect Here!\nsteam://connect/99.198.115.228:27015")
 });
 
 client.login(process.env.BOT_TOKEN);
