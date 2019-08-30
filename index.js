@@ -243,6 +243,7 @@ client.on("message", async message => {
   
   if(command === "connect") {
     return message.reply("Connect Here!\nsteam://connect/99.198.115.228:27015")
+  }
 });
 
 client.login(process.env.BOT_TOKEN);
