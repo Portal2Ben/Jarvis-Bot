@@ -242,7 +242,7 @@ client.on("message", async message => {
   }
   
   if(command === "connect") {
-    return message.reply("Connect Here!\nsteam://connect/99.198.115.222:27015")
+    return message.reply("Connect Here!\nsteam://connect/198.143.138.91:27015")
   }
 });
 
